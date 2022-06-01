@@ -318,7 +318,7 @@ class COCOeval:
         :param p: input params for evaluation
         :return: None
         '''
-        print('Accumulating evaluation results...')
+        print('Accumulating evaluation results from cocoeval.accumulate...')
         tic = time.time()
         if not self.evalImgs:
             print('Please run evaluate() first')
