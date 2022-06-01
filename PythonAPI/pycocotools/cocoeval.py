@@ -4,7 +4,7 @@ import numpy as np
 import datetime
 import time
 from collections import defaultdict
-from . import mask as maskUtils
+#from . import mask as maskUtils
 import copy
 
 class COCOeval:
@@ -186,7 +186,7 @@ class COCOeval:
 
         # compute iou between each dt and gt region
         iscrowd = [int(o['iscrowd']) for o in gt]
-        ious = maskUtils.iou(d,g,iscrowd)
+        #ious = maskUtils.iou(d,g,iscrowd)
         return ious
 
     def computeOks(self, imgId, catId):
